@@ -36,9 +36,9 @@ try {
  𝐁𝐘 ~ @msxnc",
                   'reply_markup'=>json_encode([
                       'inline_keyboard'=>[
-                          [['text'=>'إضافة حساب 🛃 ','callback_data'=>'login']],
-                          [['text'=>'طرق الصيد ❇️','callback_data'=>'grabber']],
-                          [['text'=>'بدء الصيد ✅','callback_data'=>'run'],['text'=>'ايقاف الصيد ❎','callback_data'=>'stop']],
+                          [['text'=>'ᴅᴀхʟ ᴋʀᴅɴɪ ᴀᴄᴄᴏᴜɴᴛ 🛃 ','callback_data'=>'login']],
+                          [['text'=>'ʜᴇɴᴀɴʏ ᴀᴄᴄᴏᴜɴᴛ ❇️','callback_data'=>'grabber']],
+                          [['text'=>'𝙷𝙰𝙲𝙺 𝙺𝚁𝙳𝙽 ✅','callback_data'=>'run'],['text'=>'ʀᴀɢʀᴛɴɪ ʜᴀᴄᴋ ❎','callback_data'=>'stop']],
                           [['text'=>'𝙎𝙏𝘼𝙏𝙐𝙎','callback_data'=>'status']]
                       ]
                   ])
@@ -81,20 +81,20 @@ try {
           				$bot->sendMessage([
           				      'parse_mode'=>'markdown',
           							'chat_id'=>$chatId,
-          							'text'=>"*Done إضـافة حـساب جديـد 🖇 To Your Tool.*\n _Username_ : [$user])(instagram.com/$user)\n_Account Name_ : _{$body->full_name}_",
+          							'text'=>"*Done ᴅᴀхʟ ᴋʀᴅɴɪ ᴀᴄᴄᴏᴜɴᴛ  🖇 To Your Tool.*\n _Username_ : [$user])(instagram.com/$user)\n_Account Name_ : _{$body->full_name}_",
 												'reply_to_message_id'=>$mid		
           					]);
           				$keyboard = ['inline_keyboard'=>[
-										[['text'=>"إضـافة حـساب جديـد 🖇",'callback_data'=>'addL']]
+										[['text'=>"ᴅᴀхʟ ᴋʀᴅɴɪ ᴀᴄᴄᴏᴜɴᴛ 🖇",'callback_data'=>'addL']]
 									]];
 		              foreach ($accounts as $account => $v) {
-		                  $keyboard['inline_keyboard'][] = [['text'=>$account,'callback_data'=>'ddd'],['text'=>"تـسجيل الخـروج  🔚",'callback_data'=>'del&'.$account]];
+		                  $keyboard['inline_keyboard'][] = [['text'=>$account,'callback_data'=>'ddd'],['text'=>"ᴅᴀʀᴄʜᴜɴ ʟᴀ ᴀᴄᴄᴏᴜɴᴛ 🔚",'callback_data'=>'del&'.$account]];
 		              }
-		              $keyboard['inline_keyboard'][] = [['text'=>'الصفحـة الرئـيسية','callback_data'=>'back']];
+		              $keyboard['inline_keyboard'][] = [['text'=>'ᴅᴀʀᴄʜᴜɴ','callback_data'=>'back']];
 		              $bot->editMessageText([
 		                  'chat_id'=>$chatId,
 		                  'message_id'=>$mid,
-		                  'text'=>"صفحـة التــحكم فـــي الحســابــات 📟.",
+		                  'text'=>"ʟᴇᴇʀᴀ ᴀᴄᴄ ɴᴇᴡ ᴅᴀхʟ ᴀᴋᴀʏ 📟.",
 		                  'reply_markup'=>json_encode($keyboard)
 		              ]);
 		              $config['mode'] = null;
@@ -120,7 +120,7 @@ try {
                       'inline_keyboard'=>[
                           [['text'=>'إضافة حساب 🛃 ','callback_data'=>'login']],
                           [['text'=>'طرق الصيد ❇️','callback_data'=>'grabber']],
-                          [['text'=>'بدء الصيد ✅','callback_data'=>'run'],['text'=>'ايقاف الصيد ❎','callback_data'=>'stop']],
+                          [['text'=>'بدء الصيد ✅','callback_data'=>'run'],['text'=>'ʀᴀɢʀᴛɴɪ ʜᴀᴄᴋ ❎','callback_data'=>'stop']],
                           [['text'=>'𝙎𝙏𝘼𝙏𝙐𝙎','callback_data'=>'status']]
                       ]
                   ])
@@ -167,22 +167,10 @@ try {
 				} else {
 					$bot->sendMessage([
 							'chat_id'=>$chatId,
-							'text'=>"𝗛𝗘𝗟𝗟𝗢 !
-~ اسـعـار الاشتراك 🧿
-~» يـوم : 1$💸
-~» اسبـوعـي : 5$ 💸
-~ 15 يـوم : 8$ 💸
-~ طـرق الـدفـع 💰
-﴿ اورنج~ انوي ~بايـبـال ~ قـوقـل بـلاي ﴾
-ـــــــــــــــــــــــــــــــــــــــــــــــــــ
-=>مـلـفات البـوت صـيـد ~» 15$ 
-=>احـدثـلـك مـلـفاتـك البـوت صـيـد ~ 5$
-=>معـندي تيـست او تجـربه فقـط اشـتـراك ✅
-َ
-𝙏𝙊 𝘽𝙐𝙔 💲⤵️",
+							'text'=>"𝗛𝗘𝗟𝗟𝗢
 							'reply_markup'=>json_encode([
                   'inline_keyboard'=>[
-                      [['text'=>'𝘿𝙀𝙑𝙀𝙇𝙊𝙋𝙀𝙍 ❤💸','url'=>'t.me/msxnc']]
+                      [['text'=>'𝘿𝙀𝙑𝙀𝙇𝙊𝙋𝙀𝙍 ❤💸','url'=>'t.me/z_0_w']]
                   ]
 							])
 					]);
@@ -195,16 +183,16 @@ try {
           if($data == 'login'){
               
         		$keyboard = ['inline_keyboard'=>[
-										[['text'=>"إضـافة حـساب جديـد 🖇",'callback_data'=>'addL']]
+										[['text'=>"ʟᴇᴇʀᴀ ᴀᴄᴄ ɴᴇᴡ ᴅᴀхʟ ᴀᴋᴀʏ 🖇",'callback_data'=>'addL']]
 									]];
 		              foreach ($accounts as $account => $v) {
-		                  $keyboard['inline_keyboard'][] = [['text'=>$account,'callback_data'=>'ddd'],['text'=>"تـسجيل الخـروج  🔚",'callback_data'=>'del&'.$account]];
+		                  $keyboard['inline_keyboard'][] = [['text'=>$account,'callback_data'=>'ddd'],['text'=>"ᴅᴀʀᴄʜᴜɴ ʟᴀ ᴀᴄᴄᴏᴜɴᴛ 🔚",'callback_data'=>'del&'.$account]];
 		              }
-		              $keyboard['inline_keyboard'][] = [['text'=>'الصفحـة الرئـيسية','callback_data'=>'back']];
+		              $keyboard['inline_keyboard'][] = [['text'=>'ᴅᴀʀᴄʜᴜɴ','callback_data'=>'back']];
 		              $bot->editMessageText([
 		                  'chat_id'=>$chatId,
 		                  'message_id'=>$mid,
-		                  'text'=>"صفحـة التــحكم فـــي الحســابــات 📟.",
+		                  'text'=>"ʟᴇᴇʀᴀ ᴀᴄᴄ ɴᴇᴡ ᴅᴀхʟ ᴀᴋᴀʏ 📟.",
 		                  'reply_markup'=>json_encode($keyboard)
 		              ]);
           } elseif($data == 'addL'){
@@ -227,12 +215,12 @@ try {
                 'text'=>"Users collection page. \n - Users : $count \n - For Account : $for",
                 'reply_markup'=>json_encode([
                     'inline_keyboard'=>[
-                        [['text'=>'من البحث 🔎','callback_data'=>'search']],
-                        [['text'=>'من هشتاك #⃣','callback_data'=>'hashtag'],['text'=>'من الاكسبلور 💡','callback_data'=>'explore']],
+                        [['text'=>'ᴜѕᴇʀɴᴀᴍᴇ 🔎','callback_data'=>'search']],
+                        [['text'=>'ʜᴀѕʜᴛᴀɢ #⃣','callback_data'=>'hashtag'],['text'=>'ɴᴀᴍᴇ 💡','callback_data'=>'explore']],
                         [['text'=>'𝐅𝐎𝐋𝐋𝐎𝐖𝐄𝐑𝐒','callback_data'=>'followers'],['text'=>"𝐅𝐎𝐋𝐋𝐎𝐖𝐈𝐍𝐆",'callback_data'=>'following']],
-                        [['text'=>"الحساب المحدد 💌: $for",'callback_data'=>'for']],
-                        [['text'=>'لسته جديدة ⚠️','callback_data'=>'newList'],['text'=>'لسته قديمة ⚠️','callback_data'=>'append']],
-                        [['text'=>'الصفحة الرئيسية ♻️','callback_data'=>'back']]
+                        [['text'=>"ᴀᴄᴄ ᴛᴏ 💌: $for",'callback_data'=>'for']],
+                        [['text'=>'ʟɪѕᴛᴇ ɴᴡᴇ  ⚠️','callback_data'=>'newList'],['text'=>'ʟɪѕᴛᴇ ᴋᴏɴ  ⚠️','callback_data'=>'append']],
+                        [['text'=>'ᴅᴀʀᴄʜᴜɴ ♻️','callback_data'=>'back']]
                     ]
                 ])
             ]);
@@ -359,12 +347,12 @@ try {
                 'text'=>"Users collection page. \n - Users : $count \n - For Account : $for",
                 'reply_markup'=>json_encode([
                     'inline_keyboard'=>[
-                        [['text'=>'من البحث 🔎','callback_data'=>'search']],
-                        [['text'=>'من هشتاك #⃣','callback_data'=>'hashtag'],['text'=>'من الاكسبلور 💡','callback_data'=>'explore']],
+                        [['text'=>'ᴜѕᴇʀɴᴀᴍᴇ 🔎','callback_data'=>'search']],
+                        [['text'=>'ʜᴀѕʜᴛᴀɢ #⃣','callback_data'=>'hashtag'],['text'=>'ɴᴀᴍᴇ 💡','callback_data'=>'explore']],
                         [['text'=>'𝐅𝐎𝐋𝐋𝐎𝐖𝐄𝐑𝐒','callback_data'=>'followers'],['text'=>"𝐅𝐎𝐋𝐋𝐎𝐖𝐈𝐍𝐆",'callback_data'=>'following']],
-                        [['text'=>"الحساب المحدد 💌: $for",'callback_data'=>'for']],
-                        [['text'=>'لسته جديدة ⚠️','callback_data'=>'newList'],['text'=>'لسته قديمة ⚠️','callback_data'=>'append']],
-                        [['text'=>'الصفحة الرئيسية ♻️','callback_data'=>'back']]
+                        [['text'=>"ᴀᴄᴄ ᴛᴏ 💌: $for",'callback_data'=>'for']],
+                        [['text'=>'ʟɪѕᴛᴇ ɴᴡᴇ ⚠️','callback_data'=>'newList'],['text'=>'ʟɪѕᴛᴇ ᴋᴏɴ  ⚠️','callback_data'=>'append']],
+                        [['text'=>'ᴅᴀʀᴄʜᴜɴ ♻️','callback_data'=>'back']]
                     ]
                 ])
             ]);
@@ -390,15 +378,15 @@ try {
           	$bot->editMessageText([
                       'chat_id'=>$chatId,
                       'message_id'=>$mid,
-                      'text'=>"𝐖𝐄𝐋𝐂𝐎𝐌𝐄 💓 
-     𝐓𝐎 𝐘𝐎𝐔𝐑 𝐈𝐆 𝐁𝐔𝐒𝐒𝐈𝐍𝐄𝐒 𝐓𝐎𝐎𝐋 
+                      'text'=>"𝐁𝐀𝐗𝐄𝐑 𝐁𝐄 𝐁𝐎 𝐓𝐎𝐎𝐋𝐄  
+                      𓆩 𝐓𝐀𝐈𝐋𝐄𝐑 𓆪 
 
- 𝐁𝐘 ~ @msxnc",
+ 𝐁𝐘 ~ @z_0_w",
                   'reply_markup'=>json_encode([
                       'inline_keyboard'=>[
-                          [['text'=>'إضافة حساب 🛃 ','callback_data'=>'login']],
-                          [['text'=>'طرق الصيد ❇️','callback_data'=>'grabber']],
-                          [['text'=>'بدء الصيد ✅','callback_data'=>'run'],['text'=>'ايقاف الصيد ❎','callback_data'=>'stop']],
+                          [['text'=>'ᴅᴀхʟ ᴋʀᴅɴɪ ᴀᴄᴄᴏᴜɴᴛ 🛃 ','callback_data'=>'login']],
+                          [['text'=>'ʜᴇɴᴀɴʏ ᴀᴄᴄᴏᴜɴᴛ ❇️','callback_data'=>'grabber']],
+                          [['text'=>'𝙷𝙰𝙲𝙺 𝙺𝚁𝙳𝙽 ✅','callback_data'=>'run'],['text'=>'ʀᴀɢʀᴛɴɪ ʜᴀᴄᴋ ❎','callback_data'=>'stop']],
                           [['text'=>'𝙎𝙏𝘼𝙏𝙐𝙎','callback_data'=>'status']]
                       ]
                   ])
@@ -410,12 +398,12 @@ try {
           		unset($accounts[$data[1]]);
           		file_put_contents('accounts.json', json_encode($accounts));
               $keyboard = ['inline_keyboard'=>[
-							[['text'=>"إضـافة حـساب جديـد 🖇",'callback_data'=>'addL']]
+							[['text'=>"ʟᴇᴇʀᴀ ᴀᴄᴄ ɴᴇᴡ ᴅᴀхʟ ᴀᴋᴀʏ 🖇",'callback_data'=>'addL']]
 									]];
 		              foreach ($accounts as $account => $v) {
 		                  $keyboard['inline_keyboard'][] = [['text'=>$account,'callback_data'=>'ddd'],['text'=>"تـسجيل الخـروج  🔚",'callback_data'=>'del&'.$account]];
 		              }
-		              $keyboard['inline_keyboard'][] = [['text'=>'الصفحـة الرئـيسية','callback_data'=>'back']];
+		              $keyboard['inline_keyboard'][] = [['text'=>'ᴅᴀʀᴄʜᴜɴ','callback_data'=>'back']];
 		              $bot->editMessageText([
 		                  'chat_id'=>$chatId,
 		                  'message_id'=>$mid,
@@ -433,11 +421,11 @@ try {
                 'text'=>"Users collection page. \n - Users : $count \n - For Account : $for",
                 'reply_markup'=>json_encode([
                     'inline_keyboard'=>[
-                        [['text'=>'من البحث 🔎','callback_data'=>'search']],
-                        [['text'=>'من هشتاك #⃣','callback_data'=>'hashtag'],['text'=>'من الاكسبلور 💡','callback_data'=>'explore']],
+                        [['text'=>'ᴜѕᴇʀɴᴀᴍᴇ 🔎','callback_data'=>'search']],
+                        [['text'=>'ʜᴀѕʜᴛᴀɢ #⃣','callback_data'=>'hashtag'],['text'=>'ɴᴀᴍᴇ 💡','callback_data'=>'explore']],
                         [['text'=>'𝐅𝐎𝐋𝐋𝐎𝐖𝐄𝐑𝐒','callback_data'=>'followers'],['text'=>"𝐅𝐎𝐋𝐋𝐎𝐖𝐈𝐍𝐆",'callback_data'=>'following']],
-                        [['text'=>"الحساب المحدد 💌: $for",'callback_data'=>'for']],
-                        [['text'=>'لسته جديدة ⚠️','callback_data'=>'newList'],['text'=>'لسته قديمة ⚠️','callback_data'=>'append']],
+                        [['text'=>"ᴀᴄᴄ ᴛᴏ 💌: $for",'callback_data'=>'for']],
+                        [['text'=>'ʟɪѕᴛᴇ ɴᴡᴇ ⚠️','callback_data'=>'newList'],['text'=>'ʟɪѕᴛᴇ ᴋᴏɴ  ⚠️','callback_data'=>'append']],
                         [['text'=>'الصفحة الرئيسية ♻️','callback_data'=>'back']]
                     ]
                 ])
@@ -447,15 +435,15 @@ try {
           	  $bot->editMessageText([
                       'chat_id'=>$chatId,
                       'message_id'=>$mid,
-                      'text'=>"𝐖𝐄𝐋𝐂𝐎𝐌𝐄 💓 
-     𝐓𝐎 𝐘𝐎𝐔𝐑 𝐈𝐆 𝐁𝐔𝐒𝐒𝐈𝐍𝐄𝐒 𝐓𝐎𝐎𝐋 
+                      'text'=>"𝐁𝐀𝐗𝐄𝐑 𝐁𝐄 𝐁𝐎 𝐓𝐎𝐎𝐋𝐄  
+                    𓆩 𝐓𝐀𝐈𝐋𝐄𝐑 𓆪 
 
- 𝐁𝐘 ~ @msxnc",
+ 𝐁𝐘 ~ @z_0_w",
                   'reply_markup'=>json_encode([
                       'inline_keyboard'=>[
-                          [['text'=>'إضافة حساب 🛃 ','callback_data'=>'login']],
-                          [['text'=>'طرق الصيد ❇️','callback_data'=>'grabber']],
-                          [['text'=>'بدء الصيد ✅','callback_data'=>'run'],['text'=>'ايقاف الصيد ❎','callback_data'=>'stop']],
+                          [['text'=>'ᴅᴀхʟ ᴋʀᴅɴɪ ᴀᴄᴄᴏᴜɴᴛ  🛃 ','callback_data'=>'login']],
+                          [['text'=>'ʜᴇɴᴀɴʏ ᴀᴄᴄᴏᴜɴᴛ ❇️','callback_data'=>'grabber']],
+                          [['text'=>'𝙷𝙰𝙲𝙺 𝙺𝚁𝙳𝙽 ✅','callback_data'=>'run'],['text'=>'ʀᴀɢʀᴛɴɪ ʜᴀᴄᴋ ❎','callback_data'=>'stop']],
                           [['text'=>'𝙎𝙏𝘼𝙏𝙐𝙎','callback_data'=>'status']]
                       ]
                   ])
@@ -463,22 +451,22 @@ try {
               exec('screen -dmS '.explode(':',$data[1])[0].' php start.php');
               $bot->sendMessage([
                 'chat_id'=>$chatId,
-                'text'=>"*جــاري الفـحص برعـاية『هـنودي ال ثگيل』𖤍᭄༒*\n Account: `".explode(':',$data[1])[0].'`',
+                'text'=>"*ʜᴀᴍᴜ ᴀᴡ ᴀᴄᴄ ᴋᴀ ʜᴇɴᴀʏ хᴀᴢɴ ʙᴜɴ 𖤍᭄༒*\n Account: `".explode(':',$data[1])[0].'`',
                 'parse_mode'=>'markdown'
               ]);
           	} elseif($data[0] == 'stop'){
           	  $bot->editMessageText([
                       'chat_id'=>$chatId,
                       'message_id'=>$mid,
-                      'text'=>"𝐖𝐄𝐋𝐂𝐎𝐌𝐄 💓 
-     𝐓𝐎 𝐘𝐎𝐔𝐑 𝐈𝐆 𝐁𝐔𝐒𝐒𝐈𝐍𝐄𝐒 𝐓𝐎𝐎𝐋 
+                      'text'=>"𝐁𝐀𝐗𝐄𝐑 𝐁𝐄 𝐁𝐎 𝐓𝐎𝐎𝐋𝐄 
+                     𓆩 𝐓𝐀𝐈𝐋𝐄𝐑 𓆪 
 
- 𝐁𝐘 ~ @msxnc",
+ 𝐁𝐘 ~ @z_0_w",
                       'reply_markup'=>json_encode([
                       'inline_keyboard'=>[
-                          [['text'=>'إضافة حساب 🛃 ','callback_data'=>'login']],
-                          [['text'=>'طرق الصيد ❇️','callback_data'=>'grabber']],
-                          [['text'=>'بدء الصيد ✅','callback_data'=>'run'],['text'=>'ايقاف الصيد ❎','callback_data'=>'stop']],
+                          [['text'=>'ᴅᴀхʟ ᴋʀᴅɴɪ ᴀᴄᴄᴏᴜɴᴛ 🛃 ','callback_data'=>'login']],
+                          [['text'=>'ʜᴇɴᴀɴʏ ᴀᴄᴄᴏᴜɴᴛ ❇️','callback_data'=>'grabber']],
+                          [['text'=>'𝙷𝙰𝙲𝙺 𝙺𝚁𝙳𝙽 ✅','callback_data'=>'run'],['text'=>'ʀᴀɢʀᴛɴɪ ʜᴀᴄᴋ ❎','callback_data'=>'stop']],
                           [['text'=>'𝙎𝙏𝘼𝙏𝙐𝙎','callback_data'=>'status']]
                       ]
                     ])
